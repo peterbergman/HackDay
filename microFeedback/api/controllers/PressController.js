@@ -6,7 +6,7 @@
 */
 
 module.exports = {
-	lastDay: function(req, res) {
+	aggregate: function(req, res) {
 		Press.native(function(errror, collection){
 			collection.aggregate(
 				{
