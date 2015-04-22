@@ -6,6 +6,7 @@
  */
 
 module.exports = {
-	
+  lastDay: function(req, res) {
+    res.send('Hi there');
+  }
 };
-
