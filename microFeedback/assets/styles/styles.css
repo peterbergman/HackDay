@@ -1,0 +1,134 @@
+body {
+	background-color:#444E59;
+}
+
+.title {
+
+  font-family: "Source Sans Pro", sans-serif;
+  text-align:center;
+  font-size:5em;
+  color:#fff;
+
+}
+
+#buttonWrapper{
+  display:block;
+  width:75%;
+  height:150px;
+  text-align:center;
+  margin:0 auto;
+  position:relative;
+}
+
+#great{
+  background:#46BFBD;
+  border-bottom: solid 4px #2F7F7E;
+}
+#great:hover{
+  background:#5AD3D1;
+}
+#meh{
+  background:#FDB45C;
+  border-bottom: solid 4px #BD8745;
+}
+#meh:hover{
+  background:#FFC870;
+
+}
+#terrible{
+  background:#F7464A;
+  border-bottom: solid 4px #B73437;
+}
+#terrible:hover{
+  background:#FF5A5E;
+}
+
+.button {
+  width:25%;
+  display:inline-block;
+  margin:10px;
+
+}
+.round-button-circle {
+  width: 100%;
+  height:0;
+  padding-bottom: 100%;
+  border-radius: 50%;
+  overflow:hidden;
+}
+
+
+.btnLabel{
+  color:#FFF;
+  font-family:"Source Sans Pro", sans-serif;
+  font-size:xx-large;
+  /*margin:0px auto;*/
+  text-align:center;
+  padding-top:25%;
+}
+
+/*måbajl*/
+
+@media(max-width:640px){
+
+  .button {
+
+    width:50%;
+    display:block;
+    margin:0 auto;
+    padding-bottom:10px;
+    padding-top:0px;
+    height:100%;
+
+  }
+  .title {
+
+    font-family: "Source Sans Pro", sans-serif;
+    text-align:center;
+    font-size:3em;
+    color:#fff;
+
+  }
+  .btnLabel{
+    color:#FFF;
+    font-family:"Source Sans Pro", sans-serif;
+    font-size:large;
+    /*margin:0px auto;*/
+    text-align:center;
+    padding-top:20%;
+  }
+
+}
+
+@media(max-width:480px){
+
+  .button {
+
+    width:50%;
+    display:block;
+    margin:0 auto;
+    padding-bottom:5px;
+    height:100%;
+
+
+
+  }
+  .title {
+
+    font-family: "Source Sans Pro", sans-serif;
+    text-align:center;
+    font-size:2em;
+    color:#fff;
+
+  }
+  #buttonWrapper{
+    display:block;
+    width:75%;
+    height:150px;
+    text-align:center;
+    margin:0 auto;
+    position:relative;
+  }
+
+
+}
