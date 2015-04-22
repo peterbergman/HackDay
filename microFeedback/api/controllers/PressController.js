@@ -23,9 +23,37 @@ module.exports = {
 							$sum: 1
 						},
 						options: {
-							'$push': {'option': '$option'}
+							'$push': '$option'
 						}
 					},
+				},
+				{
+					$unwind: '$options'
+				},
+				{
+					$group: {
+						'_id': {
+							'options': '$options',
+							'date': '$_id'
+						},
+						totalOption: {
+							$sum: 1
+						},
+						dates: {
+							'$addToSet': '$_id'
+						}
+					}
+				},
+				{
+					$unwind: '$dates'
+				},
+				{
+					$group: {
+						'_id': '$dates',
+						options: {
+							'$addToSet': {'option': '$_id.options', 'count': '$totalOption'}
+						}
+					}
 				},
 				{
 					$sort: {
