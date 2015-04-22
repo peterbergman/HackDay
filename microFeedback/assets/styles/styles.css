@@ -43,6 +43,7 @@ body {
   background:#FF5A5E;
 }
 
+
 .button {
   width:25%;
   display:inline-block;
@@ -67,6 +68,18 @@ body {
   padding-top:25%;
 }
 
+/*Output-site*/
+#chartWrapper{
+  width:75%;
+  margin:0px auto;
+  padding-top:20px;
+}
+#myChart{
+  float:left;
+}
+#myOtherChart{
+ 
+}
 /*måbajl*/
 
 @media(max-width:640px){
@@ -109,8 +122,6 @@ body {
     margin:0 auto;
     padding-bottom:5px;
     height:100%;
-
-
 
   }
   .title {
